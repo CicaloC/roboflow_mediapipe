@@ -1,15 +1,12 @@
 # Installation guide
 
-conda create -n newenv python=3.8
+Follow steps to create new env for roboflow dependecies at 
+https://github.com/roboflow-ai/zero-shot-object-tracking
 
-activate newenv
+After roboflow dependencies installed: pip install freemocap
 
-conda install pytorch torchvision torchaudio -c pytorch
-conda install ftfy regex tqdm requests pandas seaborn
-pip install pycocotools tensorflow
+***From what I have seen installing roboflow dependecies 
+after freemocap causes import errors***
 
-pip install freemocap
-
-***From my attempts installing roboflow dependencies after having freemocap
-installed will create an error from version control***************
-
+After installed, open roboflow_mediapipe.py, change paths 
+in the main section to synced video folder and run script
