@@ -7,8 +7,8 @@
 
 2. Create a Python3.7 Anaconda environment and activate it 
 
-''' conda create -n roboflow_mediapipe_env python=3.7 '''
-''' activate roboflow_mediapipe_env
+'''conda create -n roboflow_mediapipe_env python=3.7'''
+''' activate roboflow_mediapipe_env '''
 
 3. Install Freemocap and Roboflow Dependencies
 
