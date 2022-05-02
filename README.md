@@ -24,6 +24,13 @@ Download either yolov5s.pt or yolov5x.pt and place the file in the models folder
 5s is a smaller network and will run faster but is less accurate than 5x. 5s is the
 default weights, if using 5x, change line 644 in roboflow_mediapipe.py
 
+In my experience mediapipe does not come downloaded with the model necessary to 
+set model_complexity = 2. If that is the case than you can go to 
+https://drive.google.com/drive/folders/15R-b6iP6jSt3HHKeJNhfvalhIJIpYeqO?usp=sharing
+download that file and past it in: 
+C:\Users\yourpath\anaconda3\envs\roboflow_mediapipe_env\Lib\site-packages\mediapipe\modules\pose_landmark
+
+
 ## Process Videos
 
 1. Go to line 618 of roboflow_mediapipe.py and change yolo_path to the 
