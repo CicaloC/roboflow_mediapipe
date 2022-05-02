@@ -3,7 +3,7 @@
 ## Installation Guide
 1. Clone this repository and open folder
 ```
-git clone https://github.com/CicaloC/roboflow_mediapipe.git '''
+git clone https://github.com/CicaloC/roboflow_mediapipe.git
 cd roboflow_mediapipe
 ```
 2. Create a Python3.7 Anaconda environment and activate it 
