@@ -12,8 +12,13 @@ conda create -n roboflow_mediapipe_env python=3.7
 activate roboflow_mediapipe_env
 ```
 3. Install Freemocap and Roboflow Dependencies
+If you want to run the script with GPU
 ```
-$ pip install -r requirements.txt
+$ pip install -r requirements_gpu.txt
+```
+If you want to run the script with CPU(much slower)
+```
+$ pip install -r requirements_cpu.txt
 ```
 *Must be in the roboflow_mediapipe folder*
 
