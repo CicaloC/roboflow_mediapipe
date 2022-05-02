@@ -15,7 +15,14 @@ activate roboflow_mediapipe_env
 ```
 $ pip install -r requirements.txt
 ```
-*Must be in the roboflow_mediapipe folder
+*Must be in the roboflow_mediapipe folder*
+
+4. Download yolo model
+
+Go to: https://drive.google.com/drive/u/0/folders/1scSTZVBw07IjnvICwQYiMMtqKxIPD8uq
+Download either yolov5s.pt or yolov5x.pt and place the file in the models folder.
+5s is a smaller network and will run faster but is less accurate than 5x. 5s is the
+default weights, if using 5x, change line 644 in roboflow_mediapipe.py
 
 ## Process Videos
 
