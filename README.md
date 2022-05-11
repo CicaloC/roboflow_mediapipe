@@ -12,16 +12,16 @@ conda create -n roboflow_mediapipe_env python=3.7
 activate roboflow_mediapipe_env
 ```
 3. Install Freemocap and Roboflow Dependencies
-If you want to run the script with GPU
 ```
-$ pip install -r requirements_gpu.txt
-```
-If you want to run the script with CPU(much slower)
-```
-$ pip install -r requirements_cpu.txt
+$ pip install -r requirements.txt
 ```
 *Must be in the roboflow_mediapipe folder*
-
+If you want to run on GPU
+```
+pip uninstall torch
+pip uninstall torchvision
+torchvision --pre --extra-index-url https://download.pytorch.org/whl/nightly/cu116
+```
 4. Download yolo model
 
 Go to: https://drive.google.com/drive/u/0/folders/1scSTZVBw07IjnvICwQYiMMtqKxIPD8uq
