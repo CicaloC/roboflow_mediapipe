@@ -20,7 +20,7 @@ If you want to run on GPU
 ```
 pip uninstall torch
 pip uninstall torchvision
-torchvision --pre --extra-index-url https://download.pytorch.org/whl/nightly/cu116
+pip install torchvision --pre --extra-index-url https://download.pytorch.org/whl/nightly/cu116
 ```
 4. Download yolo model
 
