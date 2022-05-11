@@ -695,6 +695,8 @@ if __name__ == '__main__':
         visualize(mediaPipeData_nCams_nFrames_nPeople_nImgPts_XYC,outSourceFolder)
         
 
-    #Save out numpy array 
-    np.save(sourceFolder+'mediaPipeData_2d.npy',mediaPipeData_nCams_nFrames_nPeople_nImgPts_XYC)
+    #Save out numpy array
+    for i in range(num_people): 
+        mediaPipeData_nCams_nFrames_nImgPts_XYC = mediaPipeData_nCams_nFrames_nPeople_nImgPts_XYC[:,:,i,:,:]
+        np.save(sourceFolder+'mediaPipeData_2d_person'+str(i)+'.npy',mediaPipeData_nCams_nFrames_nImgPts_XYC)
             
